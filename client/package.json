@@ -8,7 +8,6 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
@@ -40,7 +39,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -62,6 +61,7 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^29.5.1",
     "@types/js-cookie": "^3.0.3",
     "@types/lodash": "^4.14.192",
     "@types/react-transition-group": "^4.4.5",
@@ -69,10 +69,15 @@
     "@types/yup": "^0.32.0",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "babel-jest": "^29.5.0",
     "eslint": "^8.38.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "order-imports": "^1.5.0"
+    "jest": "29.3.1",
+    "jest-environment-jsdom": "29.3.1",
+    "order-imports": "^1.5.0",
+    "regenerator-runtime": "^0.13.11",
+    "ts-node-dev": "^2.0.0"
   }
 }

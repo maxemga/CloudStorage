@@ -1,4 +1,4 @@
-import { FileExtensions } from 'src/enums'
+import { FileExtensions } from './../enums'
 
 export const isMedia = (type: FileExtensions) =>
   [

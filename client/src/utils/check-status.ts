@@ -1,5 +1,5 @@
-import { Statuses } from 'src/enums'
-import { FileUpload } from 'src/types'
+import { Statuses } from './../enums'
+import { FileUpload } from './../types'
 
 export const checkStatus = (files: FileUpload[]) => {
   for (let i = 0; i < files.length; i++) {
