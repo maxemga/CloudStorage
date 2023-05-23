@@ -1,0 +1,69 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    // "import-helpers/order-imports": [
+    //   "warn",
+    //   {
+    //     "newlinesBetween": "always", // new line between groups
+    //     "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
+    //     "alphabetize": { "order": "asc", "ignoreCase": true }
+    //   }
+    // ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "react/jsx-no-literals": "off",
+
+    "prefer-const": ["error"],
+    "react-hooks/exhaustive-deps": "warn",
+
+    "no-console": "warn",
+    "object-shorthand": "error",
+    "no-unneeded-ternary": "error",
+    "no-nested-ternary": "error",
+    "newline-before-return": "warn",
+    "react/jsx-key": "warn",
+    "semi": ["error", "never"],
+
+    // react
+    "react/react-in-jsx-scope": "off",
+
+    "no-shadow": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+  }
+}
+
+// "react-hooks/exhaustive-deps": "warn",
+// "react-hooks/rules-of-hooks": "warn",
+// "no-console": "warn",
+// "object-shorthand": "error",
+// "no-unneeded-ternary": "error",
+// "no-nested-ternary": "error",
+// "newline-before-return": "warn",
+// "no-shadow": "off",
+// "react/no-array-index-key": "warn",
+// "react/jsx-key": "warn",
+// "react/no-unused-state": "off"
+// }
